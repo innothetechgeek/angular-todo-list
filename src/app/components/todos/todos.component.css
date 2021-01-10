@@ -1,0 +1,28 @@
+#header{
+    text-align: center;
+    padding:15px;
+}
+
+#header .fa {
+    color:rgb(194,222,243);
+}
+#header{
+    padding-left:0px;
+}
+.d-inline{
+    display:inline;
+    float:left;
+}
+
+
+
+.content{
+    width:600px;
+    margin: auto;
+}
+
+.main-container{
+    display:flex;
+}
+
+

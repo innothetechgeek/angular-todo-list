@@ -1,0 +1,12 @@
+<div class = "content">
+    <div id = "header">
+        <div class = "d-inline">
+            <i class="fa fa-bars"></i>
+        </div>
+        
+        All Tasks
+    </div>
+    <app-todo-item *ngFor="let todo of todos" [todo] = "todo"> 
+
+    </app-todo-item>
+</div>
