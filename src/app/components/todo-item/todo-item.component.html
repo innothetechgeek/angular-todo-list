@@ -1,9 +1,12 @@
 <div>
-    <div class = "todo-item">
+    <div class = "todo-item" [ngClass]="setClasses()">
         <input type="checkbox" name="" id="">
         <p>{{todo.title}}</p>
         <div class="delete">
-            <span class = "fa fa-check"></span>
+            <span class = "fa" [ngClass]="{
+                'fa-check':this.todo.completed == true,
+                'fa-times':this.todo.completed == false
+              }"></span>
         </div>
     </div>
 </div>

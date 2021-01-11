@@ -1,12 +1,12 @@
 
 .todo-item{
     display:flex;
-    background:red;
     align-items:flex-start;
     margin-bottom:2px;
     padding-top:0px;
     padding-bottom:0px;
     padding-top:15px;
+    border-bottom: 1px solid grey  ;
 }
 
 .todo-item p{
@@ -27,7 +27,19 @@
    
 }
 
+.fa-times{
+    display:inline-block;
+    margin-top:4px;
+}
+
 .delete .fa-check{
     margin-top:4px;
     display:inline-block;
+}
+.is-complete{
+    text-decoration: line-through;
+}
+
+.is-complete{
+    text-decoration: line-through;
 }
