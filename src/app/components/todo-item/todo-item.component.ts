@@ -18,8 +18,8 @@ export class TodoItemComponent implements OnInit {
   setClasses() {
 
     let classes = {
+      
       todo: true,
-     
       'is-complete': this.todo.completed,
       
     }

@@ -6,7 +6,16 @@
         
         All Tasks
     </div>
+    
     <app-todo-item *ngFor="let todo of todos" [todo] = "todo"> 
 
     </app-todo-item>
+    <div class = "bottom-nav">
+        <input type = "text" placeholder="Add New Todo"/>
+        <div class = "add-new">
+            <div class = "icon-container">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
 </div>
