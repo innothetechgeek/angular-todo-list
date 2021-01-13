@@ -1,21 +1,20 @@
-<div class = "content">
+<div class = "main-container">
     <div id = "header">
         <div class = "d-inline">
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-cog"></i>
         </div>
-        
         All Tasks
     </div>
-    
-    <app-todo-item *ngFor="let todo of todos" [todo] = "todo"> 
-
-    </app-todo-item>
-    <div class = "bottom-nav">
-        <input type = "text" placeholder="Add New Todo"/>
-        <div class = "add-new">
-            <div class = "icon-container">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-            </div>
+    <div class = "content">
+        <div class = "add-new-container">
+            <input type = "text" placeholder="Add New Todo"/>
+            <button class = "btn-addnew">
+                Add New
+            </button>
         </div>
+        
+        <app-todo-item *ngFor="let todo of todos" [todo] = "todo"> 
+
+        </app-todo-item>
     </div>
 </div>

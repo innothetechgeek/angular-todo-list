@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpClient,HttpHeaders } from '@angular/common/http'
+import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Todo } from '../models/Todo';
 
 @Injectable({
@@ -8,9 +8,9 @@ import { Todo } from '../models/Todo';
 })
 export class TodoService {
 
-  todoUrl:string = 'https://jsonplaceholder.typicode.com';
+  todoUrl:string = 'https://jsonplaceholder.typicode.com/todos?_limit=7';
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient ) { }
 
   getTodos():Observable <Todo[]>{
     
